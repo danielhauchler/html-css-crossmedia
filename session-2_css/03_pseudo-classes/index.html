@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo Classes</title>
+    <style>
+        a {
+            transition: 3s;
+        }
+        a:hover {
+            color: red;
+        }
+
+        a:active {
+            text-transform: uppercase;
+        }
+
+        input:focus {
+            background-color: blue;
+            color: white
+        }
+
+        div {
+            width: 200px;
+            height: 200px;
+            background-color: turquoise;
+            transition: 2s;
+        }
+
+        div:hover {
+            background-color: yellowgreen;
+            margin-left: 50px;
+        }
+    </style>
+</head>
+<body>
+    <a href="https://google.com">Gehe zu Google</a>
+    <input type="text" placeholder="Schreib etwas!">
+
+    <div></div>
+</body>
+</html>

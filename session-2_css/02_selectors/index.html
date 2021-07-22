@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selectors</title>
+    
+    <!-- CSS -->
+    <style>
+        /* element selector */
+        div {
+            width: 100px;
+            height: 100px;
+            background-color: cadetblue;
+        }
+
+        /* Rauten-Selektort für IDs */
+        #box {
+            width: 100px;
+            height: 100px;
+            background-color:blueviolet;
+        }
+
+        /* Punkt-Selector für Classes */
+        .box {
+            width: 100px;
+            height: 100px;
+            background-color:chocolate;
+        }
+
+        /* IDs und Klassen kombiniert */
+        .box-2 {
+            width: 200px;
+            height: 200px;
+        }
+
+        #yellow {
+            background-color: yellow;
+        }
+
+        /* nested styles */
+        #wrap #teaser #headline {
+
+        }
+        #wrap #box #headline {
+
+        }
+
+        /* listed styles */
+        #box,
+        #teaser {
+            width: 50px;
+            height: 50px;
+        }
+
+        /* attribute selector */
+        div[data-attr^="Da"] {
+            text-decoration: underline;
+            text-transform: uppercase;
+        }
+
+
+    </style>
+
+</head>
+<body>
+    <div></div>
+    <div id="box"></div>
+    <div class="box"></div>
+    <div class="box-2" id="yellow"></div>
+
+    <div id="wrap">
+        <div id="teaser">
+            <div id="headline">
+
+            </div>
+        </div>
+        <div id="box">
+            <div id="headline">
+
+            </div>
+        </div>
+
+        <div data-attr="Daniel">Daniel</div>
+    </div>
+</body>
+</html>
